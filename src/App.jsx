@@ -98,7 +98,7 @@ function App() {
 
     try {
       // Send the safest coordinates array to our live Node.js backend
-      const response = await fetch('http://localhost:5000/api/calculate-safety', {
+      const response = await fetch('https://saferoute-9b7a.onrender.com', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ routeCoordinates: safestRouteCoords })
